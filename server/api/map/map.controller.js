@@ -13,12 +13,11 @@ var _ = require('lodash');
 
 // Get list of things
 exports.index = function(req, res) {
-    res.json([
-      {
-          name: 'NodersCL',
-          web: 'http://www.noders.cl',
-          info: 'Noders en Chile',
-          descripcion: ''
-      }
-    ]);
+    res.json([{
+        name: 'NodersCL',
+        web: 'http://www.noders.cl',
+        title: 'Noders en Chile',
+        latitude: -33.4422182,
+        longitude: -70.6262061,
+    }]);
 };
