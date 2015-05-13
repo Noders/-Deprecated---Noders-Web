@@ -26,31 +26,51 @@
 <div class="container ">
     <div class="map">
         <div class="row">
+            <div class="col-md-7 map-info">
+                <div ng-show="selectedMarker" class="animated fadeIn">
+                    <h1><a href="{{selectedMarker.model.web}}"  target="_blank" title="">{{selectedMarker.model.name}}</a></h1>
+                    <h3>{{selectedMarker.model.subname}}</h3>
+                    <div class="socials">
+                        <a ng-show="selectedMarker.model.sociales.twitter" class="twitter" ng-href="http://www.twitter.com/{{selectedMarker.model.sociales.twitter}}" target="_blank"><i class="fa fa-fw fa-twitter"></i>@{{selectedMarker.model.sociales.twitter}}</a>
+                        <a ng-show="selectedMarker.model.sociales.facebook" class="facebook" ng-href="http://www.facebook.com/{{selectedMarker.model.sociales.facebook}}" target="_blank"><i class="fa fa-fw fa-facebook"></i>@{{selectedMarker.model.sociales.facebook}}</a>
+                        <a ng-show="selectedMarker.model.sociales.youtube" class="youtube" ng-href="{{selectedMarker.model.sociales.youtube.url}}" target="_blank"><i class="fa fa-fw fa-youtube"></i>@{{selectedMarker.model.sociales.youtube.name}}</a>
+                        <a ng-show="selectedMarker.model.sociales.googleplus" class="googleplus" ng-href="{{selectedMarker.model.sociales.googleplus.url}}" target="_blank"><i class="fa fa-fw fa-google-plus"></i>@{{selectedMarker.model.sociales.googleplus.name}}</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-5 map-container animated fadeIn">
                 <ui-gmap-google-map center='map.center' options='map.options' zoom='map.zoom'>
-                    <ui-gmap-markers models="map.noders" coords="'self'" icon="'icon'">
+                    <ui-gmap-markers models="map.noders" idKey="'id'" icon="'image'" coords="'self'" click="noderClicked">
                     </ui-gmap-markers>
                 </ui-gmap-google-map>
-            </div>
-            <div class="col-md-7 map-info">
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Features:</h1>
-            <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-                <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
-            </ul>
+    <div class="partners">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Gente que nos quiere <i class="fa fa-fw fa-heart heart"></i></h1>
+                <div class="col-sm-3 col-xs-3 col-md-3 col-lg-2" ng-repeat="partner in partners">
+                    <a class="img-wrap" href="{{partner.url}}"  target="_blank">
+                        <img src="assets/images/partners/{{partner.img}}" class="img" alt="">
+                        <h3 class="text">{{partner.name}}</h3>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <footer class="footer">
     <div class="container">
-        <p>Angular Fullstack v2.0.13 |
-            <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-            <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+        <p>
+            Made with <i class="fa fa-fw fa-heart heart"></i> by your beloved nerds @ <a  target="_blank" href="www.noders.com" title="">Noders.com</a>
+        </p>
+        <p>
+            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+        </p>
     </div>
 </footer>

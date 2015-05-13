@@ -10,26 +10,31 @@ angular.module('nodersWebApp')
         };
 
         $scope.map.zoom = 3;
-
-        $http.get('/api/things').success(function(awesomeThings) {
-            $scope.awesomeThings = awesomeThings;
+        $http.get('/api/partners').success(function(partners) {
+            $scope.partners = partners;
+            console.log($scope.partners)
         });
 
         uiGmapGoogleMapApi.then(function(maps) {
             $http.get('/api/map').success(function(noders) {
                 var events = [];
-                _.each(noders,function(node,i){
-                    var ob = {};
+                _.each(noders,function(noder,i){
+                    var ob = noder;
                     ob.id = i;
-                    ob.latitude= node.latitude;
-                    ob.longitude= node.longitude;
-                    ob.title='T'+i;
+                    ob.latitude= noder.latitude;
+                    ob.longitude= noder.longitude;
+                    ob.title=noder.title;
                     events.push(ob);
                 });
                 $scope.map.noders = events;
                 console.log($scope.map.noders)
             });
         });
+
+        $scope.noderClicked = function(marker){
+            $scope.selectedMarker = null
+;           $scope.selectedMarker = marker;
+        }
 
 
 

@@ -25,8 +25,13 @@
 .footer {
     text-align: center;
     padding: 30px 0;
+    font-size: 20px;
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
+}
+
+.footer .heart {
+    color: red;
 }
 
 .container .logo {
@@ -34,12 +39,28 @@
     padding-bottom: 20px;
 }
 
-.container .map .map-container .angular-google-map-container{
-    height: 500px;
+.container .partners {}
+
+.container .partners .img-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 
+.container .partners .img-wrap .img {
+    width: 100%;
+}
+
+.container .partners .img-wrap .text {
+    text-align: center;
+}
+
+.container .map .map-container .angular-google-map-container {
+    height: 550px;
+}
 
 .container {
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
