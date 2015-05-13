@@ -15,6 +15,11 @@ angular.module('nodersWebApp')
             console.log($scope.partners)
         });
 
+        $http.get('/api/noders').success(function(noders) {
+            $scope.noders = noders;
+            console.log($scope.noders)
+        });
+
         uiGmapGoogleMapApi.then(function(maps) {
             $http.get('/api/map').success(function(noders) {
                 var events = [];

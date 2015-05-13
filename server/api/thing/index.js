@@ -7,5 +7,6 @@ var router = express.Router();
 
 router.get('/', controller.index);
 router.get('/partners', controller.partners);
+router.get('/noders', controller.noders);
 
 module.exports = router;
