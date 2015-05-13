@@ -47,7 +47,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container animated fadeInLeft" ng-show="partners">
     <div class="partners">
         <div class="row">
             <div class="col-lg-12">
@@ -56,6 +56,26 @@
                     <a class="img-wrap" href="{{partner.url}}"  target="_blank">
                         <img src="assets/images/partners/{{partner.img}}" class="img" alt="">
                         <h3 class="text">{{partner.name}}</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container animated fadeInLeft" ng-show="partners">
+    <div class="noders">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Noders en el Mundo <i class="fa fa-fw fa-globe"></i></h1>
+                <div class="col-sm-3 col-xs-3 col-md-3 col-lg-2" ng-repeat="noder in noders">
+                    <a class="img-wrap" href="{{noder.url}}"  target="_blank">
+                        <img src="assets/images/noders/{{noder.img}}" class="img" alt="">
+                        <h3 class="text">@{{noder.username}}</h3>
+                        <p class="text">{{noder.pais}}</p>
+                        <p class="text">{{noder.description}}</p>
                     </a>
                 </div>
             </div>

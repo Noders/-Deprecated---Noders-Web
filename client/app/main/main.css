@@ -45,7 +45,6 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
-    cursor: pointer;
 }
 
 .container .partners .img-wrap .img {
@@ -53,6 +52,21 @@
 }
 
 .container .partners .img-wrap .text {
+    text-align: center;
+}
+
+
+.container .noders .img-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.container .noders .img-wrap .img {
+    width: 100%;
+}
+
+.container .noders .img-wrap .text {
     text-align: center;
 }
 
