@@ -38,8 +38,48 @@
     padding-top: 80px;
     padding-bottom: 20px;
 }
+.container-wrapper.light{
+    background:rgb(47, 50, 56);
 
-.container .partners {}
+}
+.container-wrapper.dark{
+    background: rgb(38, 41, 46);
+
+}
+.container-wrapper{
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+}
+.container.light{
+}
+
+.container .page-header {
+    font-size: 40px;
+}
+
+.container .page-header .icon {
+    -webkit-transition: color 0.1s linear 0s;
+    -moz-transition: color 0.1s linear 0s;
+    -o-transition: color 0.1s linear 0s;
+    transition: color 0.1s linear 0s;
+}
+.container .page-header:hover .heart {
+    color: red;
+}
+.container .page-header:hover .globe {
+  color: rgb(62, 154, 18);
+}
+
+.container .description{
+        letter-spacing: 1px;
+}
+.container .description h1,.container .description h2{
+    line-height: 48px;
+}
+.container .description .invitation b{
+
+}
 
 .container .partners .img-wrap {
     position: relative;
@@ -47,14 +87,14 @@
     margin-bottom: 25px;
 }
 
-.container .partners .img-wrap .img {
+.container .partners .partner .img-wrap .img {
     width: 100%;
 }
 
-.container .partners .img-wrap .text {
+.container .partners .partner .img-wrap .text {
     text-align: center;
+    font-size: 20px
 }
-
 
 .container .noders .img-wrap {
     position: relative;
