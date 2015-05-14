@@ -23,10 +23,10 @@
 }
 
 .footer {
+
     text-align: center;
     padding: 30px 0;
     font-size: 20px;
-    margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
 
@@ -36,23 +36,26 @@
 
 .container .logo {
     padding-top: 80px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
-.container-wrapper.light{
-    background:rgb(47, 50, 56);
 
+.container-wrapper.light {
+    background: rgb(47, 50, 56);
 }
-.container-wrapper.dark{
+
+.container-wrapper.dark {
     background: rgb(38, 41, 46);
-
 }
-.container-wrapper{
+
+.container-wrapper {
     padding-top: 80px;
     padding-bottom: 60px;
+}
 
+.footer .container-wrapper{
+    padding: 0;
 }
-.container.light{
-}
+.container.light {}
 
 .container .page-header {
     font-size: 40px;
@@ -64,22 +67,25 @@
     -o-transition: color 0.1s linear 0s;
     transition: color 0.1s linear 0s;
 }
+
 .container .page-header:hover .heart {
     color: red;
 }
+
 .container .page-header:hover .globe {
-  color: rgb(62, 154, 18);
+    color: rgb(62, 154, 18);
 }
 
-.container .description{
-        letter-spacing: 1px;
+.container .description {
+    letter-spacing: 1px;
 }
-.container .description h1,.container .description h2{
+
+.container .description h1,
+.container .description h2 {
     line-height: 48px;
 }
-.container .description .invitation b{
 
-}
+.container .description .invitation b {}
 
 .container .partners .img-wrap {
     position: relative;
@@ -93,7 +99,7 @@
 
 .container .partners .partner .img-wrap .text {
     text-align: center;
-    font-size: 20px
+    font-size: 14px
 }
 
 .container .noders .img-wrap {
@@ -107,6 +113,7 @@
 }
 
 .container .noders .img-wrap .text {
+    font-size: 14px;
     text-align: center;
 }
 
@@ -117,4 +124,13 @@
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .container .partners .partner .img-wrap .text {
+        font-size: 13px;
+    }
+    .container .noders .img-wrap .text {
+        font-size: 10px;
+    }
 }
