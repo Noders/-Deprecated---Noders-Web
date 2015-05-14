@@ -1,96 +1,131 @@
 <!--div ng-include="'components/navbar/navbar.html'"></div-->
 <!--header class="hero-unit" id="banner">
+  <div class="container-wrapper">
+      
+  </div>
   <div class="container">
     <h1>'Allo, 'Allo!</h1>
     <p class="lead">Kick-start your next web app with Angular Fullstack</p>
     <img src="assets/images/yeoman.png" alt="I'm Yeoman">
   </div>
 </header-->
-<div class="container ">
-    <div class="logo">
-        <div class="row">
-            <div class="col-xs-12 col-lg-6 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <img src="assets/images/noders3-white-904.png" alt="" class="img-responsive  animated fadeIn">
+<div class="container-wrapper light">
+    <div class="container ">
+        <div class="logo">
+            <div class="row" class="text-center ">
+                <div class="col-xs-12 col-lg-8 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 animated fadeIn delay1s">
+                    <img src="assets/images/noders3-white-904.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-12 text-center animated fadeIn delay1s">
+                    <h1>¿Por qué? Porque nos gusta</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container ">
-    <div class="description">
-        <div class="row">
-            <div class="col-xs-12 col-lg-6 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+<div class="container-wrapper dark">
+    <div class="container ">
+        <div class="description">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center animated fadeIn delay2s">
+                    <h1> En <b> <a href="/" title="">Noders</a></b> creamos y mantenemos una comunidad global alrededor de NodeJS y su ecosistema en LatinoAmérica y el Mundo </h1>
+                    <h2> Hacemos cursos, talleres, workshops, hackatones y presentaciones </h2>
+                    <h2 class="invitation"> ¡Quieres hacer algo en tu Pais? <b>Contáctanos! </b></h2>
+                    <h2 class="invitation"> 
+                    <a href="http://www.twitter.com/noderscl"><i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                    <a href="http://www.facebook.com/noders"><i class="fa fa-fw fa-facebook"></i>
+                    </a>
+                    <a href="http://slack.noders.cl"><i class="fa fa-fw fa-slack"></i>
+                    </a>
+                    <a href="mailto:slack@noders.cl"><i class="fa fa-fw fa-envelope"></i>
+                    </a>
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container ">
-    <div class="map">
-        <div class="row">
-            <div class="col-md-7 map-info">
-                <div ng-show="selectedMarker" class="animated fadeIn">
-                    <h1><a href="{{selectedMarker.model.web}}"  target="_blank" title="">{{selectedMarker.model.name}}</a></h1>
-                    <h3>{{selectedMarker.model.subname}}</h3>
-                    <div class="socials">
-                        <a ng-show="selectedMarker.model.sociales.twitter" class="twitter" ng-href="http://www.twitter.com/{{selectedMarker.model.sociales.twitter}}" target="_blank"><i class="fa fa-fw fa-twitter"></i>@{{selectedMarker.model.sociales.twitter}}</a>
-                        <a ng-show="selectedMarker.model.sociales.facebook" class="facebook" ng-href="http://www.facebook.com/{{selectedMarker.model.sociales.facebook}}" target="_blank"><i class="fa fa-fw fa-facebook"></i>@{{selectedMarker.model.sociales.facebook}}</a>
-                        <a ng-show="selectedMarker.model.sociales.youtube" class="youtube" ng-href="{{selectedMarker.model.sociales.youtube.url}}" target="_blank"><i class="fa fa-fw fa-youtube"></i>@{{selectedMarker.model.sociales.youtube.name}}</a>
-                        <a ng-show="selectedMarker.model.sociales.googleplus" class="googleplus" ng-href="{{selectedMarker.model.sociales.googleplus.url}}" target="_blank"><i class="fa fa-fw fa-google-plus"></i>@{{selectedMarker.model.sociales.googleplus.name}}</a>
+<div class="container-wrapper light">
+    <div class="container ">
+        <div class="map">
+            <div class="row">
+                <div class="col-md-7 map-info">
+                    <div ng-show="selectedMarker" class="animated fadeIn">
+                        <h1><a href="{{selectedMarker.model.web}}"  target="_blank" title="">{{selectedMarker.model.name}}</a></h1>
+                        <h3>{{selectedMarker.model.subname}}</h3>
+                        <div class="socials">
+                            <a ng-show="selectedMarker.model.sociales.twitter" class="twitter" ng-href="http://www.twitter.com/{{selectedMarker.model.sociales.twitter}}" target="_blank"><i class="fa fa-fw fa-twitter"></i>@{{selectedMarker.model.sociales.twitter}}</a>
+                            <a ng-show="selectedMarker.model.sociales.facebook" class="facebook" ng-href="http://www.facebook.com/{{selectedMarker.model.sociales.facebook}}" target="_blank"><i class="fa fa-fw fa-facebook"></i>@{{selectedMarker.model.sociales.facebook}}</a>
+                            <a ng-show="selectedMarker.model.sociales.youtube" class="youtube" ng-href="{{selectedMarker.model.sociales.youtube.url}}" target="_blank"><i class="fa fa-fw fa-youtube"></i>@{{selectedMarker.model.sociales.youtube.name}}</a>
+                            <a ng-show="selectedMarker.model.sociales.googleplus" class="googleplus" ng-href="{{selectedMarker.model.sociales.googleplus.url}}" target="_blank"><i class="fa fa-fw fa-google-plus"></i>@{{selectedMarker.model.sociales.googleplus.name}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 map-container animated fadeIn">
+                    <ui-gmap-google-map center='map.center' options='map.options' zoom='map.zoom'>
+                        <ui-gmap-markers models="map.noders" idKey="'id'" icon="'image'" coords="'self'" click="noderClicked">
+                        </ui-gmap-markers>
+                    </ui-gmap-google-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-wrapper dark">
+    <div class="container  animated fadeInLeft" ng-show="partners">
+        <div class="partners">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"> Nuestros partners <i class="fa fa-fw fa-heart icon heart"></i></h1>
+                    <div class="col-sm-2 col-xs-4 col-md-3 col-lg-2 partner" ng-repeat="partner in partners">
+                        <a class="img-wrap" href="{{partner.url}}" target="_blank">
+                            <img src="assets/images/partners/{{partner.img}}" class="img" alt="">
+                            <h3 class="text">{{partner.name}}</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-4 col-md-3 col-lg-2 partner">
+                        <a class="img-wrap" href="mailto:partners@noders.cl" target="_blank">
+                             <h1 class="text"> ... Nos faltas tu!</h1>
+                             <h5 class="text"> <u>Envíanos un mensaje </u></h5>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 map-container animated fadeIn">
-                <ui-gmap-google-map center='map.center' options='map.options' zoom='map.zoom'>
-                    <ui-gmap-markers models="map.noders" idKey="'id'" icon="'image'" coords="'self'" click="noderClicked">
-                    </ui-gmap-markers>
-                </ui-gmap-google-map>
-            </div>
         </div>
     </div>
 </div>
-<div class="container animated fadeInLeft" ng-show="partners">
-    <div class="partners">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Gente que nos quiere <i class="fa fa-fw fa-heart heart"></i></h1>
-                <div class="col-sm-3 col-xs-3 col-md-3 col-lg-2" ng-repeat="partner in partners">
-                    <a class="img-wrap" href="{{partner.url}}"  target="_blank">
-                        <img src="assets/images/partners/{{partner.img}}" class="img" alt="">
-                        <h3 class="text">{{partner.name}}</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container animated fadeInLeft" ng-show="partners">
-    <div class="noders">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Noders en el Mundo <i class="fa fa-fw fa-globe"></i></h1>
-                <div class="col-sm-3 col-xs-3 col-md-3 col-lg-2" ng-repeat="noder in noders">
-                    <a class="img-wrap" href="{{noder.url}}"  target="_blank">
-                        <img src="assets/images/noders/{{noder.img}}" class="img" alt="">
-                        <h3 class="text">@{{noder.username}}</h3>
-                        <p class="text">{{noder.pais}}</p>
-                        <p class="text">{{noder.description}}</p>
-                    </a>
+<div class="container-wrapper light">
+    <div class="container animated fadeInLeft " ng-show="partners">
+        <div class="noders">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"> We are Noders <i class="fa fa-fw fa-globe icon globe"></i></h1>
+                    <div class="col-sm-2 col-xs-4 col-md-2 col-lg-2" ng-repeat="noder in noders">
+                        <a class="img-wrap" href="{{noder.url}}" target="_blank">
+                            <img src="assets/images/noders/{{noder.img}}" class="img" alt="">
+                            <h3 class="text username">@{{noder.username}}</h3>
+                            <p class="text country">{{noder.pais}}</p>
+                            <!--p class="text description">{{noder.description}}</p-->
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <footer class="footer">
-    <div class="container">
-        <p>
-            Made with <i class="fa fa-fw fa-heart heart"></i> by your beloved nerds @ <a  target="_blank" href="www.noders.com" title="">Noders.com</a>
-        </p>
-        <p>
-            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
-            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
-            <a  target="_blank" href="https://twitter.com/fforres">@fforres</a> |
-        </p>
+    <div class="container-wrapper">
+        <div class="container">
+            <p>
+                Made with <i class="fa fa-fw fa-heart heart"></i> by your beloved nerds @ <a target="_blank" href="www.noders.com" title="">Noders.com</a>
+            </p>
+            <p>
+                <a target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+                <a target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+                <a target="_blank" href="https://twitter.com/fforres">@fforres</a> |
+            </p>
+        </div>
     </div>
 </footer>

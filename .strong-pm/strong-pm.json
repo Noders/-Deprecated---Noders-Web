@@ -1,0 +1,36 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ServerService": 2,
+    "Group": 1,
+    "Executor": 2,
+    "ServiceInstance": 2,
+    "ServiceProcess": 1,
+    "ServiceMetric": 1,
+    "AgentTrace": 1,
+    "ExpressUsageRecord": 1,
+    "ProfileData": 1,
+    "InstanceAction": 1
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ServerService": {
+      "1": "{\"name\":\"app\",\"env\":{},\"_groups\":[{\"name\":\"default\",\"scale\":1,\"id\":1}],\"id\":1}"
+    },
+    "Group": {},
+    "Executor": {
+      "1": "{\"address\":\"localhost\",\"hostname\":\"fforres-Macbook.local\",\"id\":1}"
+    },
+    "ServiceInstance": {
+      "1": "{\"executorId\":1,\"serverServiceId\":1,\"groupId\":1,\"started\":false,\"setSize\":0,\"cpus\":\"CPU\",\"id\":1}"
+    },
+    "ServiceProcess": {},
+    "ServiceMetric": {},
+    "AgentTrace": {},
+    "ExpressUsageRecord": {},
+    "ProfileData": {},
+    "InstanceAction": {}
+  }
+}

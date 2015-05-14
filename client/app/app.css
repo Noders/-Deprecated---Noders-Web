@@ -1,7 +1,19 @@
 /**
  * Bootstrap Fonts
  */
+ .animated.delay1s{
+     animation-delay: 1s;
+     -webkit-animation-delay: 1s;
+}
+.animated.delay2s{
+     animation-delay: 2s;
+     -webkit-animation-delay: 2s;
+}
 
+.animated.delay3s{
+     animation-delay: 3s;
+     -webkit-animation-delay: 3s;
+}
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
@@ -27,7 +39,7 @@
 }
 
 body{
-    color:rgb(255, 255, 255);
+    color:rgb(238, 238, 238);
     background: rgb(38, 41, 46);
 }
 
@@ -36,4 +48,96 @@ body{
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+ a{
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 0.1s linear 0s;
+  -moz-transition: color 0.1s linear 0s;
+  -o-transition: color 0.1s linear 0s;
+  transition: color 0.1s linear 0s;
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+  color: rgb(62, 154, 18);
+  text-decoration: none;
+}
+
+
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 86.60px 0;
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+  background-size: auto 334.8632px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0,0,0,1);
+  border-left: solid 5px #226501;
+  border-right: solid 5px #226501;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 38.93px;
+  box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 290.0000px;
+  height: 167.4315780649915px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-83.7158px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+  border-top: solid 7.0711px #226501;
+  border-right: solid 7.0711px #226501;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+  border-bottom: solid 7.0711px #226501;
+  border-left: solid 7.0711px #226501;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 290.0000px;
+  height: 167.4316px;
+  z-index: 2;
+  background: inherit;
 }
