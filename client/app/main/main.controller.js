@@ -21,24 +21,22 @@ angular.module('nodersWebApp')
         });
 
         uiGmapGoogleMapApi.then(function(maps) {
-            $http.get('/api/map').success(function(noders) {
-                var events = [];
-                _.each(noders,function(noder,i){
-                    var ob = noder;
-                    ob.id = i;
-                    ob.latitude= noder.latitude;
-                    ob.longitude= noder.longitude;
-                    ob.title=noder.title;
-                    events.push(ob);
-                });
-                $scope.map.noders = events;
-                console.log($scope.map.noders)
+            var events = [];
+            _.each(noders, function(noder, i) {
+                var ob = noder;
+                ob.id = i;
+                ob.latitude = noder.latitude;
+                ob.longitude = noder.longitude;
+                ob.title = noder.title;
+                events.push(ob);
             });
+            $scope.map.noders = events;
+            $http.get('/api/map').success(function(noders) {});
         });
 
-        $scope.noderClicked = function(marker){
-            $scope.selectedMarker = null
-;           $scope.selectedMarker = marker;
+        $scope.noderClicked = function(marker) {
+            $scope.selectedMarker = null;
+            $scope.selectedMarker = marker;
         }
 
 
@@ -168,6 +166,83 @@ angular.module('nodersWebApp')
                 "color": "#dadada"
             }]
         }];
+
+
+        var noders = [{
+            name: 'NodersCL',
+            web: 'http://www.noders.cl',
+            sociales: {
+                twitter: 'noderscl',
+                googleplus: {
+                    url: 'https://plus.google.com/u/0/b/118339960159682176759/118339960159682176759/posts',
+                    name: 'NodersCL'
+                },
+                youtube: {
+                    url: 'https://www.youtube.com/channel/UC7tUsO3S7424TMcgSCUOCow/videos',
+                    name: 'NodersCL'
+                },
+                facebook: 'NodersCL'
+            },
+            subname: 'Somos la comunidad de Noders y NodeJS en Chile! ',
+            latitude: -33.4422182,
+            longitude: -70.6262061,
+        }, {
+            name: 'NodersEC',
+            web: 'http://www.noders.ec',
+            sociales: {
+                twitter: 'NodersEC',
+                facebook: 'NodersEC'
+            },
+            subname: 'Cursos gratuitos, workshops y charlas en Ecuador! ',
+            latitude: -2.1523874,
+            longitude: -79.9799096,
+        },
+        {
+            name: 'NodersSV',
+            web: 'http://www.facebook.com/nodersSV',
+            sociales: {
+                twitter: 'NodersSV',
+                facebook: 'NodersSV'
+            },
+            subname: 'Cursos gratuitos, workshops y charlas en El Salvador! ',
+            latitude: 13.6914782,
+            longitude: -89.2146939
+        },
+        {
+            name: 'NodersAR',
+            web: '#',
+            sociales: {
+                twitter: 'NodersAR',
+                facebook: 'NodersAR'
+            },
+            subname: 'Cursos gratuitos, workshops y charlas en Argentina! ',
+            latitude: -32.9264482,
+            longitude: -68.813779
+        },{
+            name: 'NodersCO',
+            web: 'http://www.facebook.com/nodersCO',
+            sociales: {
+                twitter: 'NodersCO',
+                facebook: 'NodersCO'
+            },
+            subname: 'Cursos gratuitos, workshops y charlas en Colombia! ',
+            latitude: 1.756815,
+            longitude: -75.588355
+        },
+        {
+            name: 'NodersPE',
+            web: 'http://www.facebook.com/nodersPE',
+            sociales: {
+                twitter: 'NodersPE',
+                facebook: 'NodersPE'
+            },
+            subname: 'Cursos gratuitos, workshops y charlas en Colombia! ',
+            latitude: 1.756815,
+            longitude: -75.588355
+        }
+
+
+    ]
 
 
 
