@@ -12,12 +12,13 @@ angular.module('nodersWebApp')
         $scope.map.zoom = 3;
         $http.get('/api/partners').success(function(partners) {
             $scope.partners = partners;
-            console.log($scope.partners)
         });
 
         $http.get('/api/noders').success(function(noders) {
             $scope.noders = noders;
-            console.log($scope.noders)
+        });
+        $http.get('/api/eventos').success(function(eventos) {
+            $scope.eventos = eventos;
         });
 
         uiGmapGoogleMapApi.then(function(maps) {
@@ -170,7 +171,7 @@ angular.module('nodersWebApp')
 
         var noders = [{
             name: 'NodersCL',
-            web: 'http://www.noders.cl',
+            url: 'http://www.noders.cl',
             sociales: {
                 twitter: 'noderscl',
                 googleplus: {
@@ -188,7 +189,7 @@ angular.module('nodersWebApp')
             longitude: -70.6262061,
         }, {
             name: 'NodersEC',
-            web: 'http://www.noders.ec',
+            url: 'http://www.noders.ec',
             sociales: {
                 twitter: 'NodersEC',
                 facebook: 'NodersEC'
@@ -199,7 +200,7 @@ angular.module('nodersWebApp')
         },
         {
             name: 'NodersSV',
-            web: 'http://www.facebook.com/nodersSV',
+            url: 'http://www.facebook.com/nodersSV',
             sociales: {
                 twitter: 'NodersSV',
                 facebook: 'NodersSV'
@@ -210,7 +211,7 @@ angular.module('nodersWebApp')
         },
         {
             name: 'NodersAR',
-            web: '#',
+            url: '#',
             sociales: {
                 twitter: 'NodersAR',
                 facebook: 'NodersAR'
@@ -220,7 +221,7 @@ angular.module('nodersWebApp')
             longitude: -68.813779
         },{
             name: 'NodersCO',
-            web: 'http://www.facebook.com/nodersCO',
+            url: 'http://www.facebook.com/nodersCO',
             sociales: {
                 twitter: 'NodersCO',
                 facebook: 'NodersCO'
@@ -231,7 +232,7 @@ angular.module('nodersWebApp')
         },
         {
             name: 'NodersPE',
-            web: 'http://www.facebook.com/nodersPE',
+            url: 'http://www.facebook.com/nodersPE',
             sociales: {
                 twitter: 'NodersPE',
                 facebook: 'NodersPE'
