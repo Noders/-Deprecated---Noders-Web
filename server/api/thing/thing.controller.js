@@ -117,7 +117,7 @@ exports.noders = function(req, res) {
 exports.map = function(req, res) {
     var Noders = [{
             name: 'NodersCL',
-            web: 'http://www.noders.cl',
+            url: 'http://www.noders.cl',
             sociales: {
                 twitter: 'noderscl',
                 googleplus: {
@@ -135,7 +135,7 @@ exports.map = function(req, res) {
             longitude: -70.6262061,
         }, {
             name: 'NodersEC',
-            web: 'http://www.noders.ec',
+            url: 'http://www.noders.ec',
             sociales: {
                 twitter: 'NodersEC',
                 facebook: 'NodersEC'
@@ -143,10 +143,9 @@ exports.map = function(req, res) {
             subname: 'Cursos gratuitos, workshops y charlas en Ecuador! ',
             latitude: -2.1523874,
             longitude: -79.9799096,
-        },
-        {
+        }, {
             name: 'NodersSV',
-            web: 'http://www.facebook.com/nodersSV',
+            url: 'http://www.facebook.com/nodersSV',
             sociales: {
                 twitter: 'NodersSV',
                 facebook: 'NodersSV'
@@ -154,10 +153,9 @@ exports.map = function(req, res) {
             subname: 'Cursos gratuitos, workshops y charlas en El Salvador! ',
             latitude: 13.6914782,
             longitude: -89.2146939
-        },
-        {
+        }, {
             name: 'NodersAR',
-            web: '#',
+            url: '#',
             sociales: {
                 twitter: 'NodersAR',
                 facebook: 'NodersAR'
@@ -165,9 +163,9 @@ exports.map = function(req, res) {
             subname: 'Cursos gratuitos, workshops y charlas en Argentina! ',
             latitude: -32.9264482,
             longitude: -68.813779
-        },{
+        }, {
             name: 'NodersCO',
-            web: 'http://www.facebook.com/nodersCO',
+            url: 'http://www.facebook.com/nodersCO',
             sociales: {
                 twitter: 'NodersCO',
                 facebook: 'NodersCO'
@@ -175,10 +173,9 @@ exports.map = function(req, res) {
             subname: 'Cursos gratuitos, workshops y charlas en Colombia! ',
             latitude: 1.756815,
             longitude: -75.588355
-        },
-        {
+        }, {
             name: 'NodersPE',
-            web: 'http://www.facebook.com/nodersPE',
+            url: 'http://www.facebook.com/nodersPE',
             sociales: {
                 twitter: 'NodersPE',
                 facebook: 'NodersPE'
@@ -188,6 +185,69 @@ exports.map = function(req, res) {
             longitude: -75.588355
         }
 
+
+    ]
+    res.json(Noders);
+};
+
+
+
+// Get list of map locations
+exports.eventos = function(req, res) {
+    var Noders = [{
+            name: 'Que se necesita para ser un progamador en NodeJS',
+            organizador: 'NodersSV',
+            url: 'http://www.facebook.com/noderssv',
+            sociales: {
+                twitter: 'nodersSV',
+
+                facebook: 'NodersSV'
+            },
+            fecha: '15/05/2015',
+            lugar: {
+                latitude: -33.4422182,
+                longitude: -70.6262061
+            }
+        }, {
+            name: 'ReactJS Clase1 - "React"',
+            organizador: 'NodersCL',
+            url: 'http://www.noders.cl',
+            sociales: {
+                twitter: 'nodersCL',
+                facebook: 'nodersCL'
+            },
+            fecha: '25/05/2015',
+            lugar: {
+                latitude: -33.4422182,
+                longitude: -70.6262061
+            }
+        }, {
+            name: 'ReactJS Clase2 - "Flux"',
+            organizador: 'NodersCL',
+            url: 'http://www.noders.cl',
+            sociales: {
+                twitter: 'nodersCL',
+                facebook: 'nodersCL'
+            },
+            fecha: '01/06/2015',
+            lugar: {
+                latitude: -33.4422182,
+                longitude: -70.6262061
+            }
+        }, {
+            name: 'ReactJS Clase3 - "Ecosistema de ReactJS"',
+            organizador: 'NodersCL',
+            url: 'http://www.noders.cl',
+            sociales: {
+                twitter: 'nodersCL',
+                facebook: 'nodersCL'
+            },
+            fecha: '08/06/2015',
+            lugar: {
+                latitude: -33.4422182,
+                longitude: -70.6262061
+            }
+        }
 
     ]
     res.json(Noders);
