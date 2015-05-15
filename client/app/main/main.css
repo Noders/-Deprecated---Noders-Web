@@ -38,7 +38,9 @@
     padding-top: 80px;
     padding-bottom: 80px;
 }
-
+.container .page-header{
+    margin-bottom: 40px;
+}
 .container-wrapper.light {
     background: rgb(47, 50, 56);
 }
@@ -49,7 +51,7 @@
 
 .container-wrapper {
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .footer .container-wrapper{
@@ -87,6 +89,11 @@
 
 .container .description .invitation b {}
 
+
+.container .eventos .evento{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 .container .partners .img-wrap {
     position: relative;
     overflow: hidden;
@@ -119,6 +126,12 @@
 
 .container .map .map-container .angular-google-map-container {
     height: 550px;
+}
+
+.container .map .map-container .angular-google-map-container .window {
+}
+.container .map .map-container .angular-google-map-container .window .url{
+    color:black;
 }
 
 .container {
