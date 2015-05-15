@@ -1,8 +1,5 @@
 node_modules
-public
 .tmp
 .idea
-!dist/*
 client/bower_components
-bower_components
 /server/config/local.env.js
