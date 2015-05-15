@@ -54,9 +54,6 @@
     padding-bottom: 80px;
 }
 
-.footer .container-wrapper{
-    padding: 0;
-}
 .container.light {}
 
 .container .page-header {
@@ -137,6 +134,14 @@
 .container {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+
+.footer .container-wrapper{
+    padding: 0;
+}
+.footer .helpers{
+    font-size: 14px
 }
 
 @media (max-width: 500px) {
