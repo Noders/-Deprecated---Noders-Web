@@ -91,15 +91,17 @@
                     <h1 class="page-header"> Nuestros partners <i class="fa fa-fw fa-heart icon heart"></i></h1>
                     <div class="col-sm-2 col-xs-4 col-md-3 col-lg-2 partner" ng-repeat="partner in partners">
                         <a class="img-wrap" href="{{partner.url}}" target="_blank">
-                            <img src="assets/images/partners/{{partner.img}}" class="img" alt="">
+                            <img src="https://raw.githubusercontent.com/Noders/Noders-Web/master/dist/public/assets/images/partners/{{partner.img}}" class="img" alt="">
                             <h3 class="text">{{partner.name}}</h3>
                         </a>
                     </div>
-                    <div class="col-sm-2 col-xs-4 col-md-3 col-lg-2 partner">
-                        <a class="img-wrap" href="mailto:partners@noders.cl" target="_blank">
-                            <h1 class="text">¿Nos faltas tú? ¿Olvidamos a alguien?</h1>
-                            <h5 class="text"><u>Envíanos un mensaje </u></h5>
+                    <div class="col-xs-12 partner missing">
+                    <div class="col-xs-12 partner missing">
+                        <a class="col-sm-6 col-sm-offset-3" href="mailto:partners@noders.cl" target="_blank">
+                            <h1 class="text">¿Quieres ser nuestro partner?</h1>
+                            <h5 class="subtext"><u>Comunícate con nosotros!</u> <i class="fa fa-fw fa-envelope"></i></h5>
                         </a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -114,17 +116,19 @@
                     <h1 class="page-header"> We are Noders <i class="fa fa-fw fa-globe icon globe"></i></h1>
                     <div class="noder col-sm-2 col-xs-4 col-md-2 col-lg-2" ng-repeat="noder in noders">
                         <a class="img-wrap" href="{{noder.url}}" target="_blank">
-                            <img src="assets/images/noders/{{noder.img}}" class="img" alt="">
+                            <img src="https://raw.githubusercontent.com/Noders/Noders-Web/master/dist/public/assets/images/noders/{{noder.img}}" class="img" alt="">
                             <h3 class="text username">@{{noder.username}}</h3>
                             <p class="text country">{{noder.pais}}</p>
                             <!--p class="text description">{{noder.description}}</p-->
                         </a>
                     </div>
-                    <div class="col-sm-2 col-xs-4 col-md-2 col-lg-2 noder">
-                        <a class="img-wrap" href="mailto:partners@noders.cl" target="_blank">
+                    <div class="col-xs-12 noder missing">
+                    <div class="col-xs-12 noder missing">
+                        <a class="col-sm-6 col-sm-offset-3" href="mailto:partners@noders.cl" target="_blank">
                             <h1 class="text">¿Nos faltas tú? ¿Olvidamos a alguien?</h1>
-                            <h5 class="text"> <u>Envíanos un mensaje </u></h5>
+                            <h5 class="subtext"> <u>Envíanos un mensaje </u> <i class="fa fa-fw fa-envelope"></i></h5>
                         </a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -135,8 +139,12 @@
     <div class="container-wrapper">
         <div class="container">
             <p>
-                Made with <i class="fa fa-fw fa-heart heart"></i> by your beloved nerds @ <a target="_blank" href="www.noders.com" title="">Noders.com</a>
+                Made with <i class="fa fa-fw fa-heart heart"></i> by your beloved nerds @ <a target="_blank" href="http://www.noders.com" title="">Noders.com</a>
             </p>
+            <p class="github">
+                <a href="https://github.com/Noders/Noders-Web" title="Noders Github"> Forkeanos en Github <i class="fa fa-fw fa-github"></i></a>
+            </p>
+            <hr>
             <p class="helpers">
                 Hicieron este sitio posible: 
             </p>
@@ -149,6 +157,8 @@
                 |
                 <a target="_blank" href="https://twitter.com/mala_leche">@mala_leche</a>
             </p>
+            
+         
         </div>
     </div>
 </footer>

@@ -20,7 +20,7 @@ exports.partners = function(req, res) {
     res.json([{
         name: 'GDG Santiago',
         img: 'googledevelopersgroup.png',
-        url: 'http://www.google.com'
+        url: 'http://gdgsantiago.cl/'
     }, {
         name: 'IF',
         img: 'if.png',
@@ -37,6 +37,10 @@ exports.partners = function(req, res) {
         name: 'CryptoParty.ec',
         img: 'cryptoparty.png',
         url: 'https://www.cryptoparty.ec/'
+    }, {
+        "name": "Area51",
+        "img": "area51.jpg",
+        "url": "http://area51.ec/"
     }]);
 };
 
@@ -120,14 +124,6 @@ exports.map = function(req, res) {
             url: 'http://www.noders.cl',
             sociales: {
                 twitter: 'noderscl',
-                googleplus: {
-                    url: 'https://plus.google.com/u/0/b/118339960159682176759/118339960159682176759/posts',
-                    name: 'NodersCL'
-                },
-                youtube: {
-                    url: 'https://www.youtube.com/channel/UC7tUsO3S7424TMcgSCUOCow/videos',
-                    name: 'NodersCL'
-                },
                 facebook: 'NodersCL'
             },
             subname: 'Somos la comunidad de Noders y NodeJS en Chile! ',
