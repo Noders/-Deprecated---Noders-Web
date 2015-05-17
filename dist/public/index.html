@@ -12,7 +12,14 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="app/8d12e366.vendor.css"/>
-    <link rel="stylesheet" href="app/12be6142.app.css"/>
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/b048c30f.app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="app/b048c30f.app.css">
+      <link rel="stylesheet" href="app/main/main.css">
+      <link rel="stylesheet" href="components/modal/modal.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
   </head>
   <body ng-app="nodersWebApp">
     <!--[if lt IE 7]>
@@ -37,8 +44,16 @@
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
-    <script src="app/37065de4.vendor.js"></script>
+    <script src="app/f4586999.vendor.js"></script>
 
-        <script src="app/a6758f68.app.js"></script>
+        <!-- build:js({.tmp,client}) app/app.js -->
+        <script src="app/426ebd1a.app.js"></script>
+          <!-- injector:js -->
+          <script src="app/main/main.controller.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="components/modal/modal.service.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
 </body>
 </html>
