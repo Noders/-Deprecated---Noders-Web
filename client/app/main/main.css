@@ -1,19 +1,21 @@
-.thing-form {
+
+
+.not-header .thing-form {
     margin: 20px 0;
 }
 
-#banner {
+.not-header #banner {
     border-bottom: none;
     margin-top: -20px;
 }
 
-#banner h1 {
+.not-header #banner h1 {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
 }
 
-.hero-unit {
+.not-header .hero-unit {
     position: relative;
     padding: 30px 15px;
     color: #F5F5F5;
@@ -22,164 +24,164 @@
     background: #4393B9;
 }
 
-.footer {
+.not-header .footer {
     text-align: center;
     padding: 30px 0;
     font-size: 20px;
     border-top: 1px solid #E5E5E5;
 }
 
-.footer .heart {
+.not-header .footer .heart {
     color: red;
 }
 
-.container .logo {
+.not-header .container .logo {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-.container .page-header {
+.not-header .container .page-header {
     margin-bottom: 40px;
 }
 
-.container-wrapper.light {
+.not-header .container-wrapper.light {
     background: rgb(47, 50, 56);
 }
 
-.container-wrapper.dark {
+.not-header .container-wrapper.dark {
     background: rgb(38, 41, 46);
 }
 
-.container-wrapper {
+.not-header .container-wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-.container.light {}
+.not-header .container.light {}
 
-.container .page-header {
+.not-header .container .page-header {
     font-size: 40px;
 }
 
-.container .page-header .icon {
+.not-header .container .page-header .icon {
     -webkit-transition: color 0.1s linear 0s;
     -moz-transition: color 0.1s linear 0s;
     -o-transition: color 0.1s linear 0s;
     transition: color 0.1s linear 0s;
 }
 
-.container .page-header:hover .heart {
+.not-header .container .page-header:hover .heart {
     color: red;
 }
 
-.container .page-header:hover .globe {
+.not-header .container .page-header:hover .globe {
     color: rgb(62, 154, 18);
 }
 
-.container .description {
+.not-header .container .description {
     letter-spacing: 1px;
 }
 
 .container .description h1,
-.container .description h2 {
+.not-header .container .description h2 {
     line-height: 48px;
 }
 
-.container .description .invitation b {}
+.not-header .container .description .invitation b {}
 
-.container .eventos .evento {
+.not-header .container .eventos .evento {
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
-.container .partners .img-wrap {
+.not-header .container .partners .img-wrap {
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
 }
 
-.container .partners .partner .img-wrap .img {
+.not-header .container .partners .partner .img-wrap .img {
     width: 100%;
 }
 
-.container .partners .partner .img-wrap .text {
+.not-header .container .partners .partner .img-wrap .text {
     text-align: center;
     font-size: 14px
 }
 
-.container .partners .missing .text {
+.not-header .container .partners .missing .text {
     text-align: center;
     font-size: 28px;
     margin-top:40px;
     margin-bottom:20px;
 }
 
-.container .partners .missing .subtext {
+.not-header .container .partners .missing .subtext {
     text-align: center;
     font-size: 20px;
 }
 
 
-.container .noders .img-wrap {
+.not-header .container .noders .img-wrap {
     position: relative;
     overflow: hidden;
     margin-bottom: 25px;
 }
 
-.container .noders .img-wrap .img {
+.not-header .container .noders .img-wrap .img {
     width: 100%;
 }
 
-.container .noders .img-wrap .text {
+.not-header .container .noders .img-wrap .text {
     font-size: 14px;
     text-align: center;
 }
 
-.container .noders .missing .text {
+.not-header .container .noders .missing .text {
     text-align: center;
     font-size: 28px;
     margin-top:40px;
     margin-bottom:20px;
 }
 
-.container .noders .missing .subtext {
+.not-header .container .noders .missing .subtext {
     text-align: center;
     font-size: 20px;
 }
 
 
-.container .map .map-container .angular-google-map-container {
+.not-header .container .map .map-container .angular-google-map-container {
     height: 550px;
 }
 
-.container .map .map-container .angular-google-map-container .window {}
+.not-header .container .map .map-container .angular-google-map-container .window {}
 
-.container .map .map-container .angular-google-map-container .window .url {
+.not-header .container .map .map-container .angular-google-map-container .window .url {
     color: black;
 }
 
-.container {
+.not-header .container {
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
-.footer .container-wrapper {
+.not-header .footer .container-wrapper {
     padding: 0;
 }
 
-.footer .helpers {
+.not-header .footer .helpers {
     font-size: 14px
 }
 
-.footer .github {
+.not-header .footer .github {
     font-size: 22px
 }
 
-@media (max-width: 500px) {
-    .container .partners .partner .img-wrap .text {
+.not-header @media (max-width: 500px) {
+    .not-header .container .partners .partner .img-wrap .text {
         font-size: 13px;
     }
-    .container .noders .img-wrap .text {
+    .not-header .container .noders .img-wrap .text {
         font-size: 10px;
     }
 }
