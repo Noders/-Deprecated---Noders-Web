@@ -64,11 +64,17 @@ exports.noders = function(req, res) {
             pais: 'Chile',
             url: 'http://www.twitter.com/maetschl'
         }, {
+            img: 'aldomora.jpg',
+            username: 'aldo_m_c',
+            pais: 'Ecuador',
+            url: 'http://www.twitter.com/aldo_m_c'
+        },{
             img: 'rchancay.jpeg',
             username: 'r_chancay',
             pais: 'Ecuador',
             url: 'http://www.twitter.com/r_chancay'
-        }, {
+        },
+         {
             img: 'AdrianoChiliseo.jpeg',
             username: 'AdrianoChiliseo',
             pais: 'El Salvador',
@@ -109,10 +115,6 @@ exports.noders = function(req, res) {
             pais: 'Colombia',
             url: 'http://www.twitter.com/Juanqtx'
         }
-
-
-
-
     ]);
 };
 
