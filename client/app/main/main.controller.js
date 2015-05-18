@@ -3,7 +3,7 @@
 angular.module('nodersWebApp')
     .controller('MainCtrl', ['$scope', '$http', 'uiGmapGoogleMapApi', function($scope, $http, uiGmapGoogleMapApi) {
         $scope.awesomeThings = [];
-        $scope.map = {}
+        $scope.map = {};
         $scope.map.center = {
             latitude: -16.0,
             longitude: -70.0
@@ -32,139 +32,140 @@ angular.module('nodersWebApp')
                 events.push(ob);
             });
             $scope.map.noders = events;
-            $http.get('/api/map').success(function(noders) {});
+            $http.get('/api/map').success(function(noders) {
+            });
         });
 
         $scope.noderClicked = function(marker) {
             $scope.selectedMarker = null;
             $scope.selectedMarker = marker;
-        }
+        };
 
 
 
 
 
-        $scope.map.options = {}
+        $scope.map.options = {};
         $scope.map.options.styless = [{
-            "featureType": "water",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#d3d3d3"
+            'featureType': 'water',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'color': '#d3d3d3'
             }]
         }, {
-            "featureType": "transit",
-            "stylers": [{
-                "color": "#808080"
+            'featureType': 'transit',
+            'stylers': [{
+                'color': '#808080'
             }, {
-                "visibility": "off"
+                'visibility': 'off'
             }]
         }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "visibility": "on"
+            'featureType': 'road.highway',
+            'elementType': 'geometry.stroke',
+            'stylers': [{
+                'visibility': 'on'
             }, {
-                "color": "#b3b3b3"
+                'color': '#b3b3b3'
             }]
         }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#ffffff"
+            'featureType': 'road.highway',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'color': '#ffffff'
             }]
         }, {
-            "featureType": "road.local",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "visibility": "on"
+            'featureType': 'road.local',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'visibility': 'on'
             }, {
-                "color": "#ffffff"
+                'color': '#ffffff'
             }, {
-                "weight": 1.8
+                'weight': 1.8
             }]
         }, {
-            "featureType": "road.local",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#d7d7d7"
+            'featureType': 'road.local',
+            'elementType': 'geometry.stroke',
+            'stylers': [{
+                'color': '#d7d7d7'
             }]
         }, {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "visibility": "on"
+            'featureType': 'poi',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'visibility': 'on'
             }, {
-                "color": "#ebebeb"
+                'color': '#ebebeb'
             }]
         }, {
-            "featureType": "administrative",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#a7a7a7"
+            'featureType': 'administrative',
+            'elementType': 'geometry',
+            'stylers': [{
+                'color': '#a7a7a7'
             }]
         }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#ffffff"
+            'featureType': 'road.arterial',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'color': '#ffffff'
             }]
         }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#ffffff"
+            'featureType': 'road.arterial',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'color': '#ffffff'
             }]
         }, {
-            "featureType": "landscape",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "visibility": "on"
+            'featureType': 'landscape',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'visibility': 'on'
             }, {
-                "color": "#efefef"
+                'color': '#efefef'
             }]
         }, {
-            "featureType": "road",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "color": "#696969"
+            'featureType': 'road',
+            'elementType': 'labels.text.fill',
+            'stylers': [{
+                'color': '#696969'
             }]
         }, {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "visibility": "on"
+            'featureType': 'administrative',
+            'elementType': 'labels.text.fill',
+            'stylers': [{
+                'visibility': 'on'
             }, {
-                "color": "#737373"
+                'color': '#737373'
             }]
         }, {
-            "featureType": "poi",
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
+            'featureType': 'poi',
+            'elementType': 'labels.icon',
+            'stylers': [{
+                'visibility': 'off'
             }]
         }, {
-            "featureType": "poi",
-            "elementType": "labels",
-            "stylers": [{
-                "visibility": "off"
+            'featureType': 'poi',
+            'elementType': 'labels',
+            'stylers': [{
+                'visibility': 'off'
             }]
         }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#d6d6d6"
+            'featureType': 'road.arterial',
+            'elementType': 'geometry.stroke',
+            'stylers': [{
+                'color': '#d6d6d6'
             }]
         }, {
-            "featureType": "road",
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
+            'featureType': 'road',
+            'elementType': 'labels.icon',
+            'stylers': [{
+                'visibility': 'off'
             }]
         }, {}, {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#dadada"
+            'featureType': 'poi',
+            'elementType': 'geometry.fill',
+            'stylers': [{
+                'color': '#dadada'
             }]
         }];
 
@@ -243,7 +244,7 @@ angular.module('nodersWebApp')
         }
 
 
-    ]
+    ];
 
 
 
