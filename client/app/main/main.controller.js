@@ -238,9 +238,9 @@ angular.module('nodersWebApp')
                 twitter: 'NodersPE',
                 facebook: 'NodersPE'
             },
-            subname: 'Cursos gratuitos, workshops y charlas en Colombia! ',
-            latitude: 1.756815,
-            longitude: -75.588355
+            subname: 'Cursos gratuitos, workshops y charlas en Perú! ',
+            latitude: -9.1951786,
+            longitude: -74.9904165
         }
 
 

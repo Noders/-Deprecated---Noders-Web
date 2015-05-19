@@ -64,17 +64,11 @@ exports.noders = function(req, res) {
             pais: 'Chile',
             url: 'http://www.twitter.com/maetschl'
         }, {
-            img: 'aldomora.jpg',
-            username: 'aldo_m_c',
-            pais: 'Ecuador',
-            url: 'http://www.twitter.com/aldo_m_c'
-        },{
             img: 'rchancay.jpeg',
             username: 'r_chancay',
             pais: 'Ecuador',
             url: 'http://www.twitter.com/r_chancay'
-        },
-         {
+        }, {
             img: 'AdrianoChiliseo.jpeg',
             username: 'AdrianoChiliseo',
             pais: 'El Salvador',
@@ -115,6 +109,10 @@ exports.noders = function(req, res) {
             pais: 'Colombia',
             url: 'http://www.twitter.com/Juanqtx'
         }
+
+
+
+
     ]);
 };
 
@@ -178,9 +176,9 @@ exports.map = function(req, res) {
                 twitter: 'NodersPE',
                 facebook: 'NodersPE'
             },
-            subname: 'Cursos gratuitos, workshops y charlas en Colombia! ',
-            latitude: 1.756815,
-            longitude: -75.588355
+            subname: 'Cursos gratuitos, workshops y charlas en Perú! ',
+            latitude: -9.1951786,
+            longitude: -74.9904165
         }
 
 
